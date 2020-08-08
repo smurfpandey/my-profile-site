@@ -16,24 +16,77 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.pcss">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="min-h-screen font-sans">
+  <header class="text-gray-500 bg-white body-font shadow w-full">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.47 59.65" class="fill-current h-8 w-8 mr-2"><defs><style>.cls-1{fill:#ff0b0b;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="76.2 14.2 76.2 2.83 64.21 2.83 64.21 14.2 64.21 25.56 64.21 36.92 64.21 48.29 64.21 59.65 76.2 59.65 76.2 48.29 76.2 36.92 76.2 25.56 88.2 25.56 88.2 14.2 76.2 14.2"/><polygon class="cls-1" points="100.19 2.83 100.19 14.2 100.19 25.56 88.2 25.56 88.2 36.92 100.19 36.92 100.19 48.29 100.19 59.65 112.19 59.65 112.19 48.29 112.19 36.92 112.19 25.56 112.19 14.2 112.19 2.83 100.19 2.83"/><rect x="11.89" y="11.89" width="11.89" height="11.89"/><rect x="23.78" width="11.89" height="11.89"/><rect y="23.78" width="11.89" height="11.74"/><rect x="23.78" y="47.41" width="11.89" height="11.89"/><rect x="11.89" y="35.52" width="11.89" height="11.89"/><rect x="130.8" y="47.41" width="11.89" height="11.89"/><rect x="130.8" width="11.89" height="11.89"/><rect x="142.69" y="11.89" width="11.89" height="11.74"/><rect x="154.58" y="23.63" width="11.89" height="11.89"/><rect x="142.69" y="35.52" width="11.89" height="11.89"/><polygon points="73.68 11.67 73.68 0.31 61.68 0.31 61.68 11.67 61.68 23.04 61.68 34.4 61.68 45.76 61.68 57.12 73.68 57.12 73.68 45.76 73.68 34.4 73.68 23.04 85.67 23.04 85.67 11.67 73.68 11.67"/><polygon points="97.67 11.67 97.67 23.04 85.67 23.04 85.67 34.4 97.67 34.4 97.67 45.76 97.67 57.12 109.66 57.12 109.66 45.76 109.66 34.4 109.66 23.04 109.66 11.67 109.66 0.31 97.67 0.31 97.67 11.67"/></g></g></svg>
+        <span class="text-xl font-bold uppercase tracking-wide">Neeraj Verma</span>
+      </a>
+      <button
+        class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        data-target="#navigation">
+        <i class="material-icons">menu</i>
+      </button>
+      <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          <a href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            <span>About Me</span>
+          </a>
+          <a href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            <span>Work</span>
+          </a>
+          <a href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            <span>Personal Projects</span>
+          </a>
+          <a href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            <span>Feed</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- hero -->
+  <div class="hero bg-gray-100 py-16">
+    <!-- container -->
+    <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+        <!-- hero wrapper -->
+        <div class="hero-wrapper grid grid-cols-1 gap-8 items-center">
+            <!-- hero image -->
+            <div class="hero-image">
+                <img src="./img/hero_image.png" />
+            </div>
+        </div>
+    </div>
+</div><!-- end hero -->
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
