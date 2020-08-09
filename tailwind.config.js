@@ -2,7 +2,7 @@ module.exports = {
   purge: [],
   theme: {
     fontFamily: {
-      hero: ['Antique Cherry']
+      hero: ['Antique-Cherry']
     },
     fontSize: {
       huge: '10rem'
