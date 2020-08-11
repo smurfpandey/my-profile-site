@@ -21,10 +21,10 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="min-h-screen font-sans">
+<body class="min-h-screen font-heebo">
   <header class="text-gray-500 bg-white body-font shadow w-full">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a href="#" class="p-2 mr-4 inline-flex items-center">
+      <!-- <a href="#" class="p-2 mr-4 inline-flex items-center invisible">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.47 59.65" class="fill-current h-8 w-8 mr-2">
           <defs>
             <style>
@@ -59,29 +59,28 @@
           </g>
         </svg>
         <span class="text-xl font-bold uppercase tracking-wide">Neeraj Verma</span>
-      </a>
+      </a> -->
       <button
         class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
         data-target="#navigation">
         <i class="material-icons">menu</i>
       </button>
-      <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
-        <div
-          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+      <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow items-center" id="navigation">
+        <div class="lg:inline-flex lg:flex-row lg:ml-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
           <a href="#"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            class="lg:inline-flex w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
             <span>About Me</span>
           </a>
           <a href="#"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            class="lg:inline-flex w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
             <span>Work</span>
           </a>
           <a href="#"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            class="lg:inline-flex w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
             <span>Personal Projects</span>
           </a>
           <a href="#"
-            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
+            class="lg:inline-flex w-full px-3 py-2 rounded text-gray-500 items-center justify-center hover:bg-gray-400 hover:text-gray-500">
             <span>Feed</span>
           </a>
         </div>
@@ -101,12 +100,15 @@
           <h1 class="text-huge max-w-xl text-blue-500 leading-none">Living & Learning</h1>
         </div>
         <!-- hero image -->
-        <div class="hero-image col-span-6">
+        <div class="hero-image col-span-6 relative">
           <img src="./img/hero_image.png" />
+          <a class="absolute z-10 text-blue-500 text-xl say-hi" href="#">hello@smurfpandey.me</a>
         </div>
       </div>
     </div>
   </div><!-- end hero -->
+
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
