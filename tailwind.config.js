@@ -1,11 +1,13 @@
 module.exports = {
+  important: 'html',
   purge: [
     './index.html'
   ],
   theme: {
     fontFamily: {
-      hero: ['Antique-Cherry'],
-      heebo: ['Heebo'],
+      "hero": ['Antique-Cherry'],
+      "heebo": ['Heebo'],
+      "heebo-bold": ['Heebo-Bold'],
     },
     fontSize: {
       xs: '0.75rem',
@@ -23,5 +25,7 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
