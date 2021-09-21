@@ -1,8 +1,4 @@
 module.exports = {
-  important: 'html',
-  purge: [
-    './index.html'
-  ],
   theme: {
     fontFamily: {
       "hero": ['Antique-Cherry'],
